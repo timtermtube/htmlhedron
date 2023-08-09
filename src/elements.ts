@@ -10,7 +10,14 @@ interface complex {
     complexKind: complexKinds
 };
 
+/*
+    interface 'point' draws a point with given color and radius.
+    created point doesn't function as 3d complex,
+    it therefore is seen the same in wherever perspective you watch.
+*/
 interface point extends complex {
+    color: string // html color
+    radius: number // unit accords to preset done in 'camera'
     complexKind: "point"
     coord: coord
 };
