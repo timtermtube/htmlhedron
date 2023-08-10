@@ -26,7 +26,7 @@ class Scene {
 
     /*deleteComplex(id): returns corresponding boolean as it results in.*/
     async deleteComplex(id: number): Promise<boolean> {
-        if (this.complex.find((v: complex) => {return v.id == id ? true : false;})) {
+        if (this.complex.find((v: complex): boolean => {return v.id == id ? true : false;})) {
             return true;
         } else {
             return false;
