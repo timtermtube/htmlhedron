@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-      "module": "UMD",
+      "module": "ES6",
       "declaration": true,
       "esModuleInterop": true,
       "target": "ES6",
@@ -9,6 +9,6 @@
       "strict": true,
       "outDir": "dist"
     },
-    "lib": ["es2015"],
+    "lib": ["es6"],
     "include": ["src/**/*", "webpack.config.cjss"]
 }

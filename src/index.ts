@@ -10,7 +10,7 @@ namespace HTMLHedron {
         color: string,
         coord: coord
     }): Promise<Point> {
-        return new Point(i.radius|1, i.color||"#000000", i.coord||[0,0,0]);
+        return new Point(i.radius||1, i.color||"#000000", i.coord||[0,0,0]);
     }
 
     export async function exportScene(): Promise<Scene>{
