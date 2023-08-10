@@ -7,17 +7,8 @@ interface cameraSetting {
     }
 };
 
-
-interface camera {
-    // Variable
-    dom: HTMLDivElement | null
-
-    // Method
-    export(): HTMLDivElement
-};
-
-class Camera implements camera, cameraSetting {
-    readonly dom = document.createElement("div");
+class Camera implements cameraSetting {
+    readonly dom: HTMLDivElement = document.createElement("div");
     exportSetting = {
         unit: "px",
         w: 512,
@@ -46,4 +37,4 @@ class Camera implements camera, cameraSetting {
     }
 };
 
-export {camera, Camera, cameraSetting};
+export {Camera, cameraSetting};
