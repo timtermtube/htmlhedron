@@ -18,4 +18,4 @@ namespace HTMLHedron {
     }
 };
 
-export {HTMLHedron};
+export default HTMLHedron;
